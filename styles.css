@@ -263,7 +263,10 @@ a:hover {
 /* Hero Section - StoryBrand Centered Layout */
 .hero {
     position: relative;
-    padding: 160px 0 120px;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 0 140px;
     background-image: url('assets/images/100634154_172962567510059_5228162001775099904_n.jpg');
     background-size: cover;
     background-position: center 60%;
