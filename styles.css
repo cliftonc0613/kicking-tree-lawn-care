@@ -1302,11 +1302,11 @@ a:hover {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background-color: #111;
+    background-color: #2d4935;
     color: #fff;
     padding: 18px 48px;
-    border: 2px solid #111;
-    border-radius: 8px;
+    border: 2px solid #2d4935;
+    border-radius: 4px;
     font-size: 1.2em;
     font-weight: 700;
     text-decoration: none;
@@ -1328,14 +1328,13 @@ a:hover {
     height: 100%;
     width: 0;
     z-index: -1;
-    background: #2d4935;
+    background: #1a2e22;
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .emergency-btn:hover {
     color: #fff;
     background-color: transparent;
-    border-color: #2d4935;
 }
 
 .emergency-btn:hover::before {
