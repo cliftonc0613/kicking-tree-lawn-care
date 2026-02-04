@@ -1,3 +1,10 @@
+/* CSS Custom Properties */
+:root {
+    --primary: #2d4935;
+    --primary-light: #5ba167;
+    --accent: #ff9945;
+}
+
 /* Reset and Base Styles */
 * {
     margin: 0;
