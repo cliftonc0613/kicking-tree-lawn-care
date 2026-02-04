@@ -849,7 +849,16 @@ a:hover {
 /* Process Section */
 .process {
     padding: 80px 0;
-    background-color: #f8f9fa;
+    background-color: #5ba167;
+    color: #fff;
+}
+
+.process .section-header h2 {
+    color: #fff;
+}
+
+.process .section-header p {
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .process-steps {
@@ -871,8 +880,9 @@ a:hover {
 .step-number {
     width: 80px;
     height: 80px;
-    background-color: #333;
+    background-color: #2d4935;
     color: #fff;
+    border: 3px solid #fff;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -880,15 +890,16 @@ a:hover {
     font-size: 2em;
     font-weight: 700;
     margin: 0 auto 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .step-content h3 {
-    color: #333;
+    color: #fff;
     margin-bottom: 15px;
 }
 
 .step-content p {
-    color: #555;
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
 }
 
@@ -906,7 +917,7 @@ a:hover {
 }
 
 .process-guarantees h3 {
-    color: #333;
+    color: #fff;
     margin-bottom: 30px;
     font-size: 1.8em;
 }
@@ -922,12 +933,16 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #333;
+    color: #fff;
     font-weight: 500;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 8px 16px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
 }
 
 .guarantee .material-icons {
-    color: #333;
+    color: #fff;
     font-size: 20px;
 }
 
@@ -1050,7 +1065,16 @@ a:hover {
 /* Testimonials Section */
 .testimonials {
     padding: 80px 0;
-    background-color: #f8f9fa;
+    background-color: #2d4935;
+    color: #fff;
+}
+
+.testimonials .section-header h2 {
+    color: #fff;
+}
+
+.testimonials .section-header p {
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .testimonials-grid {
@@ -1060,22 +1084,23 @@ a:hover {
 }
 
 .testimonial {
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.1);
     padding: 40px 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border: 1px solid #e9ecef;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
 }
 
 .testimonial-content .stars {
-    color: #333;
+    color: #ff9945;
     font-size: 1.2em;
     margin-bottom: 20px;
     letter-spacing: 2px;
 }
 
 .testimonial-content p {
-    color: #555;
+    color: rgba(255, 255, 255, 0.9);
     font-style: italic;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -1083,13 +1108,13 @@ a:hover {
 }
 
 .testimonial-author strong {
-    color: #333;
+    color: #fff;
     display: block;
     margin-bottom: 5px;
 }
 
 .testimonial-author span {
-    color: #666;
+    color: rgba(255, 255, 255, 0.7);
     font-size: 0.9em;
 }
 
@@ -1129,7 +1154,14 @@ a:hover {
 /* About Section */
 .about {
     padding: 80px 0;
-    background-color: #fff;
+    background: linear-gradient(135deg, #5ba167 0%, #2d4935 100%);
+    color: #fff;
+    position: relative;
+}
+
+.about .section-badge {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
 }
 
 .about-content {
@@ -1208,7 +1240,7 @@ a:hover {
 }
 
 .empathy-statement {
-    color: #111;
+    color: #fff;
     font-size: 1.35em;
     font-weight: 600;
     line-height: 1.5;
@@ -1219,7 +1251,7 @@ a:hover {
 }
 
 .authority p {
-    color: #6b7280;
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.7;
     font-size: 1.05em;
 }
@@ -1231,31 +1263,42 @@ a:hover {
 }
 
 .guide-stat {
-    background-color: #fff;
-    border: 1px solid #e5e7eb;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 12px;
     padding: 24px 16px;
     text-align: center;
+    backdrop-filter: blur(10px);
 }
 
-.stat-number {
+.guide-stat .stat-number {
     display: block;
     font-size: 1.6em;
     font-weight: 700;
-    color: #111;
+    color: #fff;
     margin-bottom: 4px;
 }
 
-.stat-label {
+.guide-stat .stat-label {
     display: block;
     font-size: 0.85em;
-    color: #6b7280;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 /* Stakes Section */
 .stakes {
     padding: 80px 0;
-    background-color: #f8f9fa;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.stakes .section-header h2 {
+    color: #ff9945;
+    font-size: 2.5em;
+}
+
+.stakes .section-header p {
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .stakes-grid {
@@ -1267,48 +1310,61 @@ a:hover {
 .stake {
     text-align: center;
     padding: 40px 20px;
-    background-color: #fff;
+    background: linear-gradient(135deg, #2d4935, #1a1a1a);
     border-radius: 8px;
-    border-left: 4px solid #333;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-left: 4px solid #ff9945;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    color: #fff;
 }
 
 .stake .material-icons {
     font-size: 48px;
-    color: #666;
+    color: #ff9945;
     margin-bottom: 20px;
 }
 
 .stake h3 {
-    color: #333;
+    color: #fff;
     margin-bottom: 15px;
 }
 
 .stake p {
-    color: #555;
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
 }
 
 /* Emergency Section */
 .emergency {
     padding: 80px 0;
-    background-color: #e8e8e8;
+    background-color: #dc2626;
+    color: #fff;
+}
+
+.emergency .section-header h2 {
+    color: #fff;
+    font-size: 2.5em;
+}
+
+.emergency .section-header p {
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .emergency-card {
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.15);
     border-radius: 16px;
     padding: 60px 40px;
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .emergency-icon {
     font-size: 48px;
-    color: #333;
-    background-color: #e5e7eb;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
     width: 72px;
     height: 72px;
     border-radius: 50%;
@@ -1316,10 +1372,11 @@ a:hover {
     align-items: center;
     justify-content: center;
     margin-bottom: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
 }
 
 .emergency-title {
-    color: #111;
+    color: #fff;
     font-size: 1.8em;
     font-weight: 700;
     margin-bottom: 0;
@@ -1327,14 +1384,14 @@ a:hover {
 }
 
 .emergency-subtitle {
-    color: #111;
+    color: #fff;
     font-size: 1.6em;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 .emergency-description {
-    color: #333;
+    color: rgba(255, 255, 255, 0.9);
     font-size: 1.05em;
     line-height: 1.6;
     margin-bottom: 24px;
