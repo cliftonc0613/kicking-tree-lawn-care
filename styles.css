@@ -1920,7 +1920,7 @@ a:hover {
 /* FAQ Hero Section */
 .faq-hero {
     padding: 140px 0 80px;
-    background: rgba(45,73,53,0.85), url('assets/images/93257830_161061892033460_6435997291781292032_n.jpg') center / cover no-repeat;
+    background: linear-gradient(rgba(45,73,53,0.85), rgba(45,73,53,0.85)), url('assets/images/93257830_161061892033460_6435997291781292032_n.jpg') center / cover no-repeat;
     text-align: center;
     position: relative;
 }
