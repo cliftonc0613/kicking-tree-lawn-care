@@ -1131,6 +1131,7 @@ a:hover {
 .coverage-note {
     color: #777;
     font-size: 0.85em;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
