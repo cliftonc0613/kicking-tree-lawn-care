@@ -377,7 +377,7 @@ a:hover {
 /* Hero Section - StoryBrand Centered Layout */
 .hero {
     position: relative;
-    min-height: 85vh;
+    min-height: 95vh;
     display: flex;
     align-items: center;
     padding: 120px 0 140px;
