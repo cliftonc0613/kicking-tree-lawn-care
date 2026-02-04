@@ -1920,7 +1920,7 @@ a:hover {
 /* FAQ Hero Section */
 .faq-hero {
     padding: 140px 0 80px;
-    background: linear-gradient(135deg, rgba(248,249,250,0.85), rgba(232,245,232,0.85)), url('assets/images/93257830_161061892033460_6435997291781292032_n.jpg') center / cover no-repeat;
+    background: rgba(45,73,53,0.85), url('assets/images/93257830_161061892033460_6435997291781292032_n.jpg') center / cover no-repeat;
     text-align: center;
     position: relative;
 }
@@ -1934,14 +1934,14 @@ a:hover {
 
 .faq-hero .hero-headline {
     font-size: 3em;
-    color: #2d4935;
+    color: #fff;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
 .faq-hero .hero-subheadline {
     font-size: 1.3em;
-    color: #555;
+    color: rgba(255, 255, 255, 0.85);
     margin-bottom: 40px;
     line-height: 1.5;
 }
