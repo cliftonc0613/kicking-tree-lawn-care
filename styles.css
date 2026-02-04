@@ -1906,7 +1906,7 @@ a:hover {
 
 .page-badge {
     display: inline-block;
-    background: linear-gradient(45deg, #2d4935, #5ba167);
+    background: #5ba167;
     color: white;
     padding: 8px 20px;
     border-radius: 25px;
