@@ -335,6 +335,16 @@
                 });
             }
             
+            // Shrink header on scroll
+            const header = document.querySelector('.header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
             // Theme toggle functionality (placeholder)
             const themeToggle = document.querySelector('.theme-toggle');
             if (themeToggle) {
