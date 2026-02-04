@@ -1111,21 +1111,49 @@ a:hover {
 }
 
 .coverage-phone {
+    position: relative;
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: var(--accent);
+    padding: 14px 28px;
     color: #fff;
-    padding: 12px 24px;
-    border-radius: 8px;
-    text-decoration: none;
+    font-size: 16px;
     font-weight: 600;
-    transition: background 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    border: 2px solid var(--accent);
+    border-radius: 4px;
+    background-color: var(--accent);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    z-index: 1;
+}
+
+.coverage-phone::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    background: #e6873d;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .coverage-phone:hover {
-    background: #e6873d;
-    transform: translateY(-2px);
+    color: #fff;
+    background-color: transparent;
+}
+
+.coverage-phone:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
 }
 
 .coverage-note {
