@@ -946,6 +946,218 @@ a:hover {
     font-size: 20px;
 }
 
+/* Service Areas Section */
+.service-areas {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.service-areas-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service-areas-header h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service-areas-header p {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.service-areas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto 50px;
+}
+
+.service-area-primary {
+    background: rgba(255, 153, 69, 0.1);
+    border: 2px solid var(--accent);
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-area-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 153, 69, 0.2);
+}
+
+.service-area {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-area:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-color: rgba(255, 153, 69, 0.3);
+}
+
+.area-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px;
+}
+
+.service-area-primary .area-icon {
+    background: rgba(255, 153, 69, 0.2);
+}
+
+.service-area-primary .area-icon .material-icons {
+    color: var(--accent);
+    font-size: 24px;
+}
+
+.service-area .area-icon {
+    background: rgba(45, 73, 53, 0.08);
+}
+
+.service-area .area-icon .material-icons {
+    color: #2d4935;
+    font-size: 22px;
+}
+
+.area-name {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.service-area-primary .area-name {
+    color: var(--accent);
+    font-size: 1.25em;
+}
+
+.service-area .area-name {
+    color: #333;
+}
+
+.area-description {
+    color: var(--accent);
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+.area-distance {
+    color: #777;
+    font-size: 0.85em;
+}
+
+.service-coverage-info {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.coverage-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 153, 69, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.coverage-icon .material-icons {
+    color: var(--accent);
+    font-size: 28px;
+}
+
+.service-coverage-info h3 {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #2d4935;
+    margin-bottom: 10px;
+}
+
+.service-coverage-info p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.coverage-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.coverage-phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.coverage-phone:hover {
+    background: #e6873d;
+    transform: translateY(-2px);
+}
+
+.coverage-note {
+    color: #777;
+    font-size: 0.85em;
+}
+
+@media (max-width: 768px) {
+    .service-areas-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .service-areas-header h2 {
+        font-size: 2em;
+    }
+
+    .service-coverage-info {
+        padding: 30px 20px;
+    }
+
+    .coverage-cta {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-areas-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 /* Gallery Section */
 .gallery {
     padding: 80px 0;
