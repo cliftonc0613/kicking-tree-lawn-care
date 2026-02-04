@@ -145,47 +145,92 @@ a:hover {
 }
 
 .btn-primary-large {
-    background-color: #333;
-    color: #fff;
-    padding: 18px 36px;
-    border: none;
-    border-radius: 6px;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    position: relative;
     display: inline-flex;
     align-items: center;
     gap: 10px;
+    padding: 18px 36px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    border: 2px solid #2d4935;
+    border-radius: 6px;
+    background-color: #2d4935;
+    cursor: pointer;
+    overflow: hidden;
     margin: 20px 0;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    z-index: 1;
+}
+
+.btn-primary-large::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    background: #1a2e22;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .btn-primary-large:hover {
-    background-color: #555;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
     color: #fff;
+    background-color: transparent;
+}
+
+.btn-primary-large:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
 }
 
 .btn-emergency {
-    background-color: #fff;
-    color: #333;
-    border: 2px solid #333;
-    padding: 12px 24px;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: 600;
+    position: relative;
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    transition: all 0.3s ease;
+    padding: 12px 24px;
+    color: #2d4935;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid #2d4935;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    z-index: 1;
+}
+
+.btn-emergency::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    background: #2d4935;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .btn-emergency:hover {
-    background-color: #333;
     color: #fff;
+    background-color: transparent;
+}
+
+.btn-emergency:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
 }
 
 /* Header */
@@ -276,21 +321,45 @@ a:hover {
 }
 
 .get-in-touch-btn {
+    position: relative;
+    display: inline-block;
     background-color: #2d4935;
     color: #fff !important;
     padding: 10px 20px;
+    border: 2px solid #2d4935;
     border-radius: 6px;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
     text-decoration: none;
-    transition: all 0.3s ease;
-    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    z-index: 1;
+}
+
+.get-in-touch-btn::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    background: #1a2e22;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .get-in-touch-btn:hover {
-    background-color: #5ba167;
-    transform: translateY(-1px);
-    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    color: #fff !important;
+    background-color: transparent;
+}
+
+.get-in-touch-btn:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
 }
 
 .mobile-menu-toggle {
@@ -1289,6 +1358,7 @@ a:hover {
 }
 
 .btn-contact-primary {
+    position: relative;
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -1299,12 +1369,36 @@ a:hover {
     font-size: 1em;
     font-weight: 600;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    overflow: hidden;
+    background-color: transparent;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    z-index: 1;
+}
+
+.btn-contact-primary::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    background: #fff;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .btn-contact-primary:hover {
-    background-color: #fff;
     color: #1a1a1a;
+    background-color: transparent;
+}
+
+.btn-contact-primary:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
 }
 
 .btn-contact-primary .material-icons {
@@ -1312,6 +1406,7 @@ a:hover {
 }
 
 .btn-contact-secondary {
+    position: relative;
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -1322,12 +1417,37 @@ a:hover {
     font-size: 1em;
     font-weight: 600;
     text-decoration: none;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    overflow: hidden;
+    background-color: transparent;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    z-index: 1;
+}
+
+.btn-contact-secondary::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    background: #555;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .btn-contact-secondary:hover {
-    border-color: #fff;
+    border-color: #555;
     color: #fff;
+    background-color: transparent;
+}
+
+.btn-contact-secondary:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
 }
 
 .btn-contact-secondary .material-icons {
